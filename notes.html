@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/728dd3850c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <title>Notes | Notify</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <span class="title">Notify</span>
+            <div class="nav-links">
+                <a class="home nav-item" href="./index.html" aria-label="home">
+                    <i class="fa-solid fa-house dimmer"></i>
+                </a>
+                <a class="notes nav-item" href="./notes.html" aria-label="notes">
+                    <i class="fa-solid fa-note-sticky dimmer"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <a class="github nav-item" href="https://m-naeem66622.github.io" aria-label="github">
+                <i class="fa fa-github dimmer" aria-hidden="true"></i>
+            </a>
+            <div class="search-cont">
+                <input type="text" id="search-bar" placeholder="'/' to start type">
+                <span id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span id="reset-search" class="hide"><i class="fa-solid fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="welcome">
+        <h1>Taking Notes</h1>
+        <h1>The Secret to Getting Better Results in Life</h1>
+    </section>
+
+    <section class="your-notes notes-section">
+        <hr>
+        <h3>Your Notes</h3>
+        <hr>
+        <div id="notes-container">
+            <!-- <p>Oops! Nothing to show :) Use "Add a Note" section to add notes.</p> -->
+            <!-- <div class="note">
+                <h1>Title Here</h1>
+                <p class="note-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatibus
+                    iusto
+                </p>
+                <button class="del-btn" type="button">
+                    <i class="fa-solid fa-trash-can white"></i>
+                    <span>Delete Note</span>
+                </button>
+            </div> -->
+            <!-- <div class="note">
+                <p class="note-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, error?</p>
+                <button class="del-btn" type="button">
+                    <i class="fa-solid fa-trash-can white"></i>
+                    <span>Delete Note</span>
+                </button>
+            </div>
+            <div class="note">
+                <p class="note-content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde voluptatibus
+                    iusto,
+                    similique nam nobis
+                    non!</p>
+                <button class="del-btn" type="button">
+                    <i class="fa-solid fa-trash-can white"></i>
+                    <span>Delete Note</span>
+                </button>
+            </div> -->
+        </div>
+    </section>
+
+    <footer>
+        <span class="title">Notify</span>
+        <span>Made with
+            <i class="fa-solid fa-heart"></i>
+            by Naeem</span>
+    </footer>
+
+    <script src="./fetch.js"></script>
+    <!-- <script src="./fetch.js"></script> -->
+</body>
+
+</html>

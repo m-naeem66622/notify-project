@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/728dd3850c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./favicon.png" />
+    <title>Home | Notify</title>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <span class="title">Notify</span>
+            <div class="nav-links">
+                <a class="home nav-item" href="./index.html" aria-label="home">
+                    <i class="fa-solid fa-house dimmer"></i>
+                </a>
+                <a class="notes nav-item" href="./notes.html" aria-label="notes">
+                    <i class="fa-solid fa-note-sticky dimmer"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="right">
+            <a class="github nav-item" href="https://m-naeem66622.github.io" aria-label="github">
+                <i class="fa fa-github dimmer" aria-hidden="true"></i>
+            </a>
+            <div class="search-cont">
+                <input type="text" id="search-bar" placeholder="'/' to start type">
+                <span id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span id="reset-search" class="hide"><i class="fa-solid fa-circle-xmark"></i></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <h1>Welcome to Notify</h1>
+        <div class="add-cont">
+            <h3>Add a note</h3>
+            <input class="input" type="text" id="note-title" placeholder="Enter Title" onkeyup="addButtonCheck()">
+            <textarea class="input" id="note-description" rows="6" placeholder="Enter Description"
+                onkeyup="addButtonCheck()"></textarea>
+            <br>
+            <button id="add-btn" type="button" disabled>
+                <i class="fa-solid fa-plus white"></i>
+                <span>Add Note</span>
+            </button>
+        </div>
+    </section>
+    <section class="your-notes">
+        <hr>
+        <h3>Your Notes</h3>
+        <hr>
+        <div id="notes-container">
+            <!-- Note Will Be Added Here -->
+        </div>
+    </section>
+    <footer>
+        <span class="title">Notify</span>
+        <span>Made with
+            <i class="fa-solid fa-heart"></i>
+            by Naeem</span>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
